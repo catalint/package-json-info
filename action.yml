@@ -1,5 +1,5 @@
-name: 'Package Version Updated'
-description: 'Indicates when the package.json version has updated in the most recent commit'
+name: 'Package Info'
+description: 'Reads the package.json and exposes info'
 branding:
     icon: 'arrow-up'
     color: 'yellow'
@@ -9,9 +9,7 @@ inputs:
         required: false
         default: 'package.json'
 outputs:
-    has-updated:
-        description: 'Whether the package.json version has been updated'
-    current-package-version:
+    version:
         description: 'The current package.json version'
 runs:
     using: 'node12'
