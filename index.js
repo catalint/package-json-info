@@ -1,8 +1,10 @@
 const { setOutput, setFailed } = require('@actions/core');
+const path = require('path');
 
 const run = async () => {
    
-    const package = require(path.join((process.cwd(),process.env['INPUT_PATH'] || 'package.json'));
+    const packagePath = path.join((process.cwd(), process.env['INPUT_PATH'] || 'package.json'));
+    const package = require(packagePath);
     setOutput('version', package.version);
 }
 
