@@ -3,7 +3,7 @@ const path = require('path');
 
 const run = async () => {
    
-   console.log('env is',JSON.stringify(process.env,null,2));
+    console.log('env is', JSON.stringify(process.env,null,2) );
     const packagePath = path.join(process.env.GITHUB_WORKSPACE, process.env.INPUT_PATH);
     console.log("Trying to read:",packagePath);
     
