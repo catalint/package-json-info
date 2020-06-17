@@ -2,7 +2,7 @@ const { setOutput, setFailed } = require('@actions/core');
 
 const run = async () => {
    
-    const package = require(process.env['INPUT_PATH'] || './package.json')
+    const package = require(path.join((process.cwd(),process.env['INPUT_PATH'] || 'package.json'));
     setOutput('version', package.version);
 }
 
