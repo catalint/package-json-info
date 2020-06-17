@@ -1,6 +1,6 @@
 # GitHub Action to get info from package.json
 
-This action outputs a variables read from package.json.
+This action outputs variables read from package.json.
 
 ## Inputs
 
