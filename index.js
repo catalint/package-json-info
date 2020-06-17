@@ -12,6 +12,6 @@ const run = async () => {
 }
 
 run().catch(error => {
-   console.log('env is',JSON.stringify(process.env,null,2);
+   console.log('env is',JSON.stringify(process.env,null,2));
     setFailed(error.message);
 });
